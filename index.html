@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kwoba's Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <script src="https://kit.fontawesome.com/2bc390ed64.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+       <header class="header">
+           <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="">HOME</a> </li>
+                    <li> <a href="">ABOUT</a> </li>
+                    <li> <a href="">COURSE</a> </li>
+                    <li> <a href="">BLOG</a> </li>
+                    <li> <a href="">CONTENT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+
+           <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making a website is now one of the easiest things to do.</br>
+            You just need a little coding and some long nights.
+            </p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+           </div>
+       </header>
+
+       <!-- Course -->
+       <main class="course">
+        <article>
+            <section>
+                <aside>
+                    <h1>Courses We Offer</h1>
+                    <p>~~ I related to a lot of the experiences Jules wrote about, especially 
+                        when he discussed his experiences with reading newspaper comics growing up. ~~</p>
+
+                    <div class="row">
+                        <h3>Intermediate</h3>
+                        <p>~~ Like him, I enjoyed Sunday newspaper comics, although I’d say 
+                            there weren’t really any banned magazines when I was growing up. 
+                            Although Jules stated that Superman was the first of the superheroes, I’d argue 
+                            that he was the first of the action comic superheroes. Growing up in Kenya, we 
+                            were taught of superheroes that existed in oral African literature hundreds of 
+                            years before colonialism. Their stories were passed through songs of war, as a way of 
+                            riling up the soldiers before they went to war. ~~
+                        </p>
+                    </div>
+                </aside>
+            </section>
+            <section>
+
+            </section>
+        </article>
+       </main>
+
+       <footer>
+       </footer> 
+
+       <!-- JavaScript for Toggle Menu -->
+       <script>
+
+           var navLinks = document.getElementById("navLinks")
+
+           function showMenu(){
+               navLinks.style.right = "0"
+           }
+           function hideMenu(){
+               navLinks.style.right = "-200px"
+           }
+
+       </script>
+    </body>
+
+</html>
